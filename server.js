@@ -2,7 +2,7 @@ const http = require('http');
 
 let server = http.createServer((req, res) => {
   req.url = req.url.slice(1);
-  if(req.url === 'favicon.ico') {
+  if(req.url.includes('favicon.ico')) {
     res.writeHead(200, { 'Content-Type': 'image/x-icon' });
     res.end('https://cdn.glitch.com/fd0945e1-6530-4d57-9bbe-86a45fc996e5%2Fblog_logo.ico?1515388595365');
   }
