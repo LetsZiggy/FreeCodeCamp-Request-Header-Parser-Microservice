@@ -1,3 +1,8 @@
+/**
+***  RESOURCES:
+***    Access request.header ip behind proxy ---> https://stackoverflow.com/a/19524949/7641789
+**/
+
 const http = require('http');
 const fs = require('fs');
 
